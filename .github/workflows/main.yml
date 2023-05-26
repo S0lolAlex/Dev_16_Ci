@@ -16,6 +16,6 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
       - name: Validate Gradle wrapper
-        run: chmod +x gradlew
+        run: chmod +x gradle
       - name: Run the Gradle tests
         run: ./gradlew test --tests "*"
