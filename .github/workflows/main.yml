@@ -18,4 +18,4 @@ jobs:
       - name: Validate Gradle wrapper
         run: chmod +x gradle
       - name: Run the Gradle tests
-        run: ./gradlew test --tests "*"
+        run: gradle test 
