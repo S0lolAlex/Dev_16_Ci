@@ -16,6 +16,6 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
       - name: Validate Gradle wrapper
-        run: gradle/gradle-build-action@749f47bda3e44aa060e82d7b3ef7e40d953bd629
+        run: chmod +x gradlew
       - name: Run the Gradle tests
         run: ./gradlew test --tests "*"
